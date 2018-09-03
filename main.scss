@@ -547,11 +547,17 @@ background-color: #35acdf;
     .pl-5 {
         padding-left: 1rem!important;
     }
+    .c_margin_2 {
+        margin-top: 120px;
+    }
 }
 
 @media (max-width: 991px) {
     .c_padding_0 {
         padding-top: 0px;
+    }
+    .c_margin_2 {
+        margin-top: 50px;
     }
 
 }

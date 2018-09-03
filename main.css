@@ -497,10 +497,16 @@ background-color: #35acdf;
     margin-left: 0rem !important; }
 
   .pl-5 {
-    padding-left: 1rem !important; } }
+    padding-left: 1rem !important; }
+
+  .c_margin_2 {
+    margin-top: 120px; } }
 @media (max-width: 991px) {
   .c_padding_0 {
-    padding-top: 0px; } }
+    padding-top: 0px; }
+
+  .c_margin_2 {
+    margin-top: 50px; } }
 @media (max-width: 767px) {
   .txt-ctr {
     text-align: center !important; }
