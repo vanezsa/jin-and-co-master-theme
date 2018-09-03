@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer" transform="translate(-457.000000, -59.000000)">
+            <g id="linkedin" transform="translate(457.000000, 59.000000)">
+                <circle id="Oval-1-Copy-5" fill="#DB2323" cx="23" cy="23" r="23"></circle>
+                <path d="M14.5006683,17 C15.8809927,17 17,15.8819936 17,14.5013438 C17,13.1194723 15.8809927,12 14.5006683,12 C13.1190073,12 12,13.1194723 12,14.5013438 C12,15.8819936 13.1190073,17 14.5006683,17" id="Fill-182" fill="#FFFFFF"></path>
+                <polygon id="Fill-183" fill="#FFFFFF" points="12 34 17 34 17 19 12 19"></polygon>
+                <path d="M24.0073086,26.0979524 C24.0073086,24.4303385 24.7921532,22.7995821 26.6688039,22.7995821 C28.5454545,22.7995821 29.0068933,24.4303385 29.0068933,26.0580861 L29.0068933,34 L34,34 L34,25.7333891 C34,19.9901379 30.6229258,19 28.5454545,19 C26.4697274,19 25.3248509,19.7058086 24.0073086,21.4160468 L24.0073086,19.4583368 L19,19.4583368 L19,34 L24.0073086,34 L24.0073086,26.0979524 Z" id="Fill-184" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
