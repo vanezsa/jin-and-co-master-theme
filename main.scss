@@ -5,8 +5,7 @@
 body {
     color: $clr-black;
     font-family: $font-stack-1;
-    font-weight: $font-weight-normal;
-    font-size: 28px;
+    font-size: $font-size-h3;
     line-height: 36px;
     letter-spacing: -1.25px;
     background-color: $clr-dirty-white;
@@ -83,13 +82,13 @@ a, a:hover {
     color: $clr-white;
     font-style: italic;
     line-height: 36px;
-    font-size: 28px;
+    font-size: $font-size-h3;
     letter-spacing: -1.25px;
 
 } 
 
 .book-reviews-source-name {
-    font-size: 28px;
+    font-size: $font-size-h3;
     color: $clr-black;
 
 }
@@ -118,7 +117,7 @@ a, a:hover {
     color: $clr-white;
     font-family: $font-stack-1;
     font-weight: $font-weight-semibold;
-    font-size: 28px;
+    font-size: $font-size-h3;
     height: 64px;
     line-height: 50px;
     white-space: pre-wrap;
@@ -202,13 +201,13 @@ a, a:hover {
     border: 1px solid #979797;
     border-radius: 0rem;
     color: $clr-black;
-    font-size: 28px;
+    font-size: $font-size-h3;
 }
 
 footer {
     color: $clr-dirty-white;
     font-weight: $font-weight-bold;
-    font-size: 20px;
+    font-size: $font-size-h5;
     letter-spacing: -0.89px;
     line-height: 26px;
     background-color: $clr-black;
