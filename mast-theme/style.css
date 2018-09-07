@@ -1,50 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,400i,700");
 /*---  FONTS  ---*/
 /*---  FONTS SIZE  ---*/
 /*---  FONTS WEIGHT  ---*/
 /*---  COLORS  ---*/
-/*---  TEXT-SHADOWS COLOR  ---*/
 * {
   box-sizing: border-box; }
 
 body {
+  font-size: 16px;
+  color: #000;
+  font-family: "Karla", sans-serif;
+  line-height: normal;
   font-weight: 400; }
 
-/*-------------------------------*/
-/*     WP FIELDS     */
-/*-------------------------------*/
 .the-title {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+  font-size: 80px;
+  color: #000;
+  font-weight: 400;
+  line-height: normal; }
 
-/*-------------------------------*/
-/*     ABOUT     */
-/*-------------------------------*/
-/*-------------------------------*/
-/*     ALL BOOKS     */
-/*-------------------------------*/
-/*-------------------------------*/
-/*     BOOK AWARDS <dl>, <dt>, <dd>    */
-/*-------------------------------*/
-/*-------------------------------*/
-/*     BOOK DETAILS   */
-/*-------------------------------*/
-/*-------------------------------*/
-/*     BOOK PURCHASE    */
-/*-------------------------------*/
-/*-------------------------------*/
-/*     BOOK REVIEWS     */
-/*-------------------------------*/
-.book-reviews-source-name {
+.the-content {
+  font-size: 28px; }
+
+.about-author-heading,
+.book-title,
+.contact-heading,
+.blog-heading {
+  font-size: 60px; }
+
+.form-control {
+  border: 1px solid #979797;
+  height: 64px;
+  background-color: #fff;
+  font-family: "Karla", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -1.25px;
+  width: 100%; }
+
+.contact-button, .contact-butto:hover,
+.contact-butto:active,
+.contact-butto:visited,
+.contact-butto:focus {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 0px;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  height: 64px;
+  line-height: 34px;
+  white-space: pre-wrap; }
+
+.book-reviews-heading,
+.book-awards-heading,
+.book-purchase-heading,
+.book-subscription-heading,
+.book-purchase-link-heading,
+.book-video-heading {
+  font-size: 28px; }
+
+.about-author-description,
+.book-description,
+.book-awards-description,
+.book-video-description {
+  font-size: 28px; }
+
+.about-author-link, .about-author-link:hover {
+  color: #000; }
+
+.all-books-display, .all-books-display:hover,
+.all-books-display:active,
+.all-books-display:visited,
+.all-books-display:focus {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 0px;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  height: 64px;
+  line-height: 50px;
+  white-space: pre-wrap; }
+
+.all-books-text,
+.book-button-text {
+  color: #fff; }
+
+.all-books-link, all-books-link:hover {
+  color: #000; }
+
+.book-cover-caption {
+  text-transform: uppercase;
+  font-size: 20px; }
+
+.book-subtitle {
+  font-size: 20px;
+  color: #495057; }
+
+.book-series, .book-number {
+  font-size: 16px;
+  color: #6c757d; }
+
+.book-purchase-display, .book-purchase-display:hover,
+.book-purchase-display:active,
+.book-purchase-display:visited,
+.book-purchase-display:focus {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 0px;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  height: 64px;
+  line-height: 50px;
+  white-space: pre-wrap; }
+
+.book-purchase-coming-soon {
+  color: #e83e8c; }
+
+.book-purchase-links, .book-purchase-links:hover {
+  color: #000; }
+
+.book-reviews-quote {
+  font-size: 20px;
+  color: #495057; }
+
+.book-reviews-source-name, .book-awards-name {
   font-weight: 700; }
 
-/*-------------------------------*/
-/*     BOOK SUBSCRIPTION  */
-/*-------------------------------*/
-/*-------------------------------*/
-/*     BOOK VIDEO     */
-/*-------------------------------*/
-/*-------------------------------*/
-/*     SOCIAL SHARE     */
-/*-------------------------------*/
+.book-subscription-subheading, .book-video-subheading {
+  color: #495057; }
+
+.book-subscription-display, .book-subscription-display:hover,
+.book-subscription-display:active,
+.book-subscription-display:visited,
+.book-subscription-display:focus {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 0px;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  height: 64px;
+  line-height: 50px;
+  white-space: pre-wrap; }
+
+.book-subscription-code {
+  color: #495057; }
+
+.book-video-display, .book-video-display:hover,
+.book-video-display:active,
+.book-video-display:visited,
+.book-video-display:focus {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 0px;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  height: 64px;
+  line-height: 50px;
+  white-space: pre-wrap; }
+
+.social-share-display, social-share-display:hover,
+.social-share-display:active,
+.social-share-displayvisited,
+.social-share-display:focus {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 0px;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  height: 64px;
+  line-height: 50px;
+  white-space: pre-wrap; }
+
+.social_share_text {
+  font-size: 16px;
+  color: #495057; }
+
+.input-group-append .btn {
+  z-index: 0; }
+
 /*-------------------------------*/
 /*     MENU HAMBURGER     */
 /*-------------------------------*/
@@ -122,7 +269,7 @@ html {
   text-transform: uppercase; }
 
 .nav.sidebar-nav li a:hover {
-  color: #DB2323;
+  color: #dc3545;
   text-decoration: none; }
 
 #sidebar-wrapper {
@@ -167,7 +314,7 @@ html {
   text-transform: uppercase;
   position: absolute;
   font-size: 13px;
-  color: #DB2323;
+  color: #dc3545;
   left: 0;
   width: 100%;
   top: 100%; }
@@ -229,7 +376,7 @@ html {
 .hamburger.is-closed .hamb-top,
 .hamburger.is-closed .hamb-middle,
 .hamburger.is-closed .hamb-bottom {
-  background-color: #DB2323; }
+  background-color: #dc3545; }
 
 .hamburger.is-closed .hamb-top {
   top: 5px;
@@ -254,7 +401,7 @@ html {
 .hamburger.is-open .hamb-top,
 .hamburger.is-open .hamb-middle,
 .hamburger.is-open .hamb-bottom {
-  background-color: #DB2323; }
+  background-color: #dc3545; }
 
 .hamburger.is-open .hamb-top,
 .hamburger.is-open .hamb-bottom {

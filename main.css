@@ -1,8 +1,3 @@
-/*---  FONTS  ---*/
-/*---  FONTS SIZE  ---*/
-/*---  FONTS WEIGHT  ---*/
-/*---  COLORS  ---*/
-/*---  TEXT-SHADOWS COLOR  ---*/
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600,900");
 @import url("https://fonts.googleapis.com/css?family=Karla:400,400i,700");
 body {
@@ -20,9 +15,6 @@ a, a:hover {
 .navbar-nav {
   padding-top: 50px; }
 
-/*-------------------------------*/
-/*     WP FIELDS     */
-/*-------------------------------*/
 .the-title {
   font-size: 120px;
   font-family: "Barlow Condensed", sans-serif;
@@ -30,40 +22,56 @@ a, a:hover {
   text-shadow: 0px 4px #CABDAC;
   line-height: 120px; }
 
-/*-------------------------------*/
-/*     ABOUT     */
-/*-------------------------------*/
-.about-author-heading {
+.the-content {
+  color: #4A4A4A; }
+
+.contact-button, .contact-butto:hover,
+.contact-butto:active,
+.contact-butto:visited,
+.contact-butto:focus {
+  background-color: #DB2323;
+  border-color: #DB2323;
+  border-radius: 0px;
+  color: #fff !important;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600 !important;
+  font-size: 28px;
+  height: 64px;
+  line-height: 50px;
+  text-transform: uppercase;
+  white-space: pre-wrap; }
+
+.about-author-heading, .contact-heading, .blog-heading {
   font-size: 60px;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 600; }
 
-.about-author-description {
+.about-author-description, .book-purchase-link-heading {
   line-height: 32px; }
 
-/*-------------------------------*/
-/*     BOOK     */
-/*-------------------------------*/
+.about-author-quote {
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: -1.7px;
+  font-style: italic; }
+
+.book-purchase-link-heading a {
+  font-size: 60px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  color: #DB2323; }
+
 .book-title {
   font-size: 100px;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 600;
   line-height: 90px; }
 
-/*-------------------------------*/
-/*     BOOK PURCHASE    */
-/*-------------------------------*/
-.book-purchase-link-heading {
-  line-height: 32px; }
-
 .book-purchase-links {
   line-height: 32px;
   color: #DB2323;
   font-weight: 700; }
 
-/*-------------------------------*/
-/*     REVIEWS     */
-/*-------------------------------*/
 .book-reviews-quote {
   color: #fff;
   font-style: italic;
@@ -71,13 +79,26 @@ a, a:hover {
   font-size: 28px;
   letter-spacing: -1.25px; }
 
+.comment-heading {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #530000; }
+
+.nav-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #4A4A4A; }
+
+.comment-name {
+  font-weight: 700;
+  color: #DB2323; }
+
 .book-reviews-source-name {
   font-size: 28px;
   color: #4A4A4A; }
 
-/*-------------------------------*/
-/*     BOOK SUBSCRIBE  */
-/*-------------------------------*/
 .book-subscription-heading {
   font-size: 60px;
   font-family: "Barlow Condensed", sans-serif;
@@ -93,10 +114,11 @@ a, a:hover {
 .book-subscription-display:visited,
 .book-subscription-display:focus {
   background-color: #DB2323;
+  border-color: #DB2323;
   border-radius: 0px;
-  color: #fff;
+  color: #fff !important;
   font-family: "Karla", sans-serif;
-  font-weight: 600;
+  font-weight: 600 !important;
   font-size: 28px;
   height: 64px;
   line-height: 50px;
@@ -120,25 +142,58 @@ a, a:hover {
   color: #DB2323;
   font-weight: 700; }
 
-.home-header-bg {
-  background-image: url(img/home-bg.png);
+.home-header-bg, .page-header-bg, .blog-header-bg, .blog-single-header-bg {
   background-position: inherit;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 1988px; }
 
-.c-margin-0 {
-  margin-top: -30px; }
+.home-header-bg {
+  background-image: url(img/home-bg.png); }
 
-.c-margin-1 {
-  margin-top: -1700px; }
+.page-header-bg {
+  background-image: url(img/about-bg.png); }
 
-.c-margin-2 {
-  margin-top: 185px; }
+.blog-header-bg {
+  background-image: url(img/blog-bg.png); }
 
-.c-padding-0 {
-  padding-top: 50px; }
+.blog-single-header-bg {
+  background-image: url(img/blog-single.png); }
+
+.blog-date {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #AEB9AD;
+  font-weight: 600; }
+
+.blog-single-tags {
+  font-weight: 700;
+  color: #DB2323;
+  line-height: 10px;
+  border-bottom: 2px solid #DB2323; }
+
+.blog-hashtags, .comment-date {
+  font-weight: 700;
+  color: #4A4A4A;
+  font-size: 20px;
+  letter-spacing: -0.89px;
+  line-height: 26px; }
+
+.blog-post-title {
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #DB2323;
+  text-transform: none; }
+
+.blog-post-date {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.blog-img-shadow {
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.5); }
 
 .subscribe-bg {
   background-image: url(img/subscribe-bg.png);
@@ -148,9 +203,10 @@ a, a:hover {
   background-size: cover;
   height: auto; }
 
-/*-------------------------------*/
-/*     INPUT     */
-/*-------------------------------*/
+.pagination span a {
+  font-size: 20px;
+  font-family: "Karla", sans-serif; }
+
 .input-group-append .btn {
   z-index: 0; }
 
@@ -170,6 +226,10 @@ a, a:hover {
   /* Firefox 18- */
   color: #4A4A4A; }
 
+.c-bottom {
+  position: absolute;
+  bottom: 0; }
+
 .form-control {
   height: 64px;
   border: 1px solid #979797;
@@ -185,30 +245,54 @@ footer {
   line-height: 26px;
   background-color: #4A4A4A; }
 
-@media (max-width: 1199px) {
-  .ml-5 {
-    margin-left: 0rem !important; }
+.pagination a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-size: 48px; }
 
-  .pl-5 {
-    padding-left: 1rem !important; }
+.pagination-next {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Karla", sans-serif; }
 
-  .c-margin-2 {
-    margin-top: 120px; } }
-@media (max-width: 991px) {
-  .c-padding-0 {
-    padding-top: 0px; }
+/* -- HAMBURGER -- */
+.c-fix {
+  background-color: transparent;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 250px; }
 
-  .c-margin-2 {
-    margin-top: 50px; } }
+#wrapper.toggled #sidebar-wrapper, .sidebar-nav {
+  width: 370px; }
+
+#sidebar-wrapper {
+  background: #FBF7EA !important; }
+
+.nav.sidebar-nav li a {
+  font-size: 60px;
+  color: #DB2323;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  line-height: 57px; }
+
 @media (max-width: 767px) {
   .txt-ctr {
     text-align: center !important; }
 
-  .c-margin-2 {
-    margin-top: 75px; } }
-@media (max-width: 576px) {
+  .pagination a {
+    font-size: 28px; } }
+@media (max-width: 575px) {
   .the-title {
     font-size: 95px;
-    line-height: 85px; } }
+    line-height: 85px; }
+
+  .pl-5 {
+    padding-left: 0.5rem !important; }
+
+  .ml-5 {
+    margin-left: 0.5rem !important; }
+
+  .pr-5 {
+    padding-right: 1rem !important; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,58 +1,98 @@
-@import 'mast-theme/variables';
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600,900');
 @import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700');
 
+$font-stack-1: 'Karla', sans-serif;
+$font-stack-2: 'Barlow Condensed', sans-serif;
+$red: #DB2323;
+$yellow: #E0B921;
+$gray-100: #F6F4EF;
+$green: #AEB9AD;
+$white: #fff;
+$black: #4A4A4A;
+$brown: #530000;
+$font-size-display1: 120px;
+$font-size-display2: 100px;
+$font-size-display3: 80px;
+$font-size-display4: 60px;
+$font-size-h1: 40px;
+$font-size-h3: 28px;
+$font-size-h5: 20px;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+$text-shadow: #CABDAC;
+
 body {
-    color: $clr-black;
+    color: $black;
     font-family: $font-stack-1;
     font-size: $font-size-h3;
     line-height: 36px;
     letter-spacing: -1.25px;
-    background-color: $clr-dirty-white;
+    background-color: $gray-100;
 
 }
 
 a, a:hover {
-    color: $clr-red;
+    color: $red;
     font-weight: $font-weight-bold;
 }
 
 .navbar-nav {padding-top: 50px;}
 
-/*-------------------------------*/
-/*     WP FIELDS     */
-/*-------------------------------*/
 .the-title {
     font-size: $font-size-display1;
     font-family: $font-stack-2;
     font-weight: $font-weight-semibold;
-    text-shadow: 0px 4px $clr-text-shadow;
+    text-shadow: 0px 4px $text-shadow;
     line-height: 120px;
-    
 }
 
 .the-content {
-    //same body css
+    color: $black;
 }
 
 
-/*-------------------------------*/
-/*     ABOUT     */
-/*-------------------------------*/
-.about-author-heading {
+.contact-button, .contact-butto:hover,
+.contact-butto:active,
+.contact-butto:visited,
+.contact-butto:focus {
+    background-color: $red;
+    border-color: $red;
+    border-radius: 0px;
+    color: $white!important;
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold!important;
+    font-size: $font-size-h3;
+    height: 64px;
+    line-height: 50px;
+    text-transform: uppercase;
+    white-space: pre-wrap;
+}
+
+.about-author-heading, .contact-heading, .blog-heading {
     font-size: $font-size-display4;
     font-family: $font-stack-2;
     font-weight: $font-weight-semibold;
 }
 
-.about-author-description {
+.about-author-description, .book-purchase-link-heading {
     line-height: 32px;
 }
 
+.about-author-quote {
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: -1.7px;
+    font-style: italic;
+}
 
-/*-------------------------------*/
-/*     BOOK     */
-/*-------------------------------*/
+.book-purchase-link-heading a {
+    font-size: $font-size-display4;
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold;
+    color: $red;
+}
 .book-title {
     font-size: $font-size-display2;
     font-family: $font-stack-2;
@@ -60,47 +100,48 @@ a, a:hover {
     line-height: 90px;
 }
 
-/*-------------------------------*/
-/*     BOOK PURCHASE    */
-/*-------------------------------*/
-.book-purchase-link-heading {
-    line-height: 32px;
-}
-
-
 .book-purchase-links {
     line-height: 32px;
-    color: $clr-red;
+    color: $red;
     font-weight: $font-weight-bold;
 }
 
-
-/*-------------------------------*/
-/*     REVIEWS     */
-/*-------------------------------*/
 .book-reviews-quote {
-    color: $clr-white;
+    color: $white;
     font-style: italic;
     line-height: 36px;
     font-size: $font-size-h3;
     letter-spacing: -1.25px;
+}
 
-} 
+.comment-heading,  {
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold;
+    font-size: 48px;
+    color: $brown;
+}
+
+.nav-text {
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold;
+    font-size: 48px;
+    color: $black;
+}
+.comment-name {
+    font-weight: $font-weight-bold;
+    color: $red;
+}
 
 .book-reviews-source-name {
     font-size: $font-size-h3;
-    color: $clr-black;
-
+    color: $black;
 }
 
-/*-------------------------------*/
-/*     BOOK SUBSCRIBE  */
-/*-------------------------------*/
 .book-subscription-heading {
     font-size: $font-size-display4;
     font-family: $font-stack-2;
     font-weight: $font-weight-semibold;
-    color: $clr-dirty-white;
+    color: $gray-100;
     line-height: 55px;
 }
 
@@ -112,11 +153,12 @@ a, a:hover {
 .book-subscription-display:active,
 .book-subscription-display:visited,
 .book-subscription-display:focus {
-    background-color: $clr-red;
+    background-color: $red;
+    border-color: $red;
     border-radius: 0px;
-    color: $clr-white;
+    color: $white!important;
     font-family: $font-stack-1;
-    font-weight: $font-weight-semibold;
+    font-weight: $font-weight-semibold!important;
     font-size: $font-size-h3;
     height: 64px;
     line-height: 50px;
@@ -133,19 +175,18 @@ a, a:hover {
 .book-date {
     font-size: $font-size-display4;
     font-family: $font-stack-2;
-    color: $clr-yellow;
+    color: $yellow;
     font-weight: $font-weight-semibold;
     line-height: 58px
 }
 
 .about-author-description-text-bold {
     line-height: 32px;
-    color: $clr-red;
+    color: $red;
     font-weight: $font-weight-bold;
 }
 
-.home-header-bg {
-    background-image: url(img/home-bg.png);
+%header-shared {
     background-position: inherit;
     height: 100%;
     background-repeat: no-repeat;
@@ -153,22 +194,65 @@ a, a:hover {
     min-height: 1988px;
 }
 
-.c-margin-0 {
-    margin-top: -30px;
+.home-header-bg {
+    @extend %header-shared;
+    background-image: url(img/home-bg.png);
 }
 
-.c-margin-1 {
-    margin-top: -1700px;
+.page-header-bg {
+    @extend %header-shared;
+    background-image: url(img/about-bg.png);
 }
 
-.c-margin-2 {
-    margin-top: 185px;
+.blog-header-bg {
+    @extend %header-shared;
+    background-image: url(img/blog-bg.png);
+}
+.blog-single-header-bg {
+    @extend %header-shared;
+    background-image: url(img/blog-single.png);
 }
 
-.c-padding-0 {
-    padding-top: 50px;
+.blog-date {
+    font-family: $font-stack-2;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: $green;
+    font-weight: $font-weight-semibold;
+
 }
 
+.blog-single-tags {
+    font-weight: $font-weight-bold;
+    color: $red;
+    line-height: 10px;
+    border-bottom:2px solid $red;
+}
+
+.blog-hashtags, .comment-date {
+    font-weight: $font-weight-bold;
+    color: $black;
+    font-size: $font-size-h5;
+    letter-spacing: -0.89px;
+    line-height: 26px;
+}
+
+.blog-post-title {
+    font-weight: $font-weight-semibold;
+    font-family: $font-stack-2;
+    color: $red;
+    text-transform:none;
+}
+
+.blog-post-date {
+    font-family: $font-stack-2;
+    font-weight: $font-weight-normal;
+    text-transform: uppercase;
+}
+
+.blog-img-shadow {
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.5);
+}
 .subscribe-bg {
     background-image: url(img/subscribe-bg.png);
     background-position: inherit;
@@ -178,75 +262,93 @@ a, a:hover {
     height: auto;
 }
 
-/*-------------------------------*/
-/*     INPUT     */
-/*-------------------------------*/
+.pagination span a {
+    font-size: $font-size-h5;
+    font-family: $font-stack-1;
+}
 .input-group-append .btn {z-index: 0;}
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: $clr-black;
+    color: $black;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-    color: $clr-black;
+    color: $black;
 }
 :-ms-input-placeholder { /* IE 10+ */
-    color: $clr-black;
+    color: $black;
 }
 :-moz-placeholder { /* Firefox 18- */
-    color: $clr-black;
+    color: $black;
 }
 
+.c-bottom {
+    position: absolute;
+    bottom: 0;
+}
 .form-control{
     height: 64px;
     border: 1px solid #979797;
     border-radius: 0rem;
-    color: $clr-black;
+    color: $black;
     font-size: $font-size-h3;
 }
 
 footer {
-    color: $clr-dirty-white;
+    color: $gray-100;
     font-weight: $font-weight-bold;
     font-size: $font-size-h5;
     letter-spacing: -0.89px;
     line-height: 26px;
-    background-color: $clr-black;
+    background-color: $black;
 }
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199px) {
-    .ml-5 {
-        margin-left: 0rem!important;
-    }
-    .pl-5 {
-        padding-left: 1rem!important;
-    }
-    .c-margin-2 {
-        margin-top: 120px;
-    }
+.pagination a {
+    font-family: $font-stack-2;
+    font-weight: $font-weight-black;
+    font-size: 48px; 
+}
+.pagination-next {
+    font-size: $font-size-h3;
+    font-weight: $font-weight-bold;
+    font-family: $font-stack-1;
 }
 
-@media (max-width: 991px) {
-    .c-padding-0 {
-        padding-top: 0px;
-    }
-    .c-margin-2 {
-        margin-top: 50px;
-    }
+/* -- HAMBURGER -- */
+.c-fix {
+    background-color: transparent;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 250px;
+}
 
+#wrapper.toggled #sidebar-wrapper, .sidebar-nav {
+    width: 370px;
+}
+#sidebar-wrapper {
+    background: #FBF7EA!important;
+}
+.nav.sidebar-nav li a {
+    font-size: $font-size-display4;
+    color: $red;
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold;
+    line-height: 57px
 }
 
 @media (max-width: 767px) {
     .txt-ctr {text-align: center!important;}
-    .c-margin-2 {
-        margin-top: 75px;
+    .pagination a {;
+        font-size: 28px; 
     }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .the-title {
         font-size: 95px;
         line-height: 85px;
     }
+    .pl-5 {padding-left: 0.5rem!important;}
+    .ml-5 {margin-left: 0.5rem!important;}
+    .pr-5 {padding-right: 1rem!important;}
 }
 
 

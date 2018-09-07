@@ -19,6 +19,7 @@
             trigger.removeClass('is-open');
             trigger.addClass('is-closed');
             isClosed = false;
+            
         } else {   
             overlay.show();
             trigger.removeClass('is-closed');

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700');
 @import 'variables';
 
 * {
@@ -5,223 +6,237 @@
 }
 
 body {
+    font-size: $font-size-h6;
+    color: $black;
+    font-family: $font-stack-1;
+    line-height: normal;
     font-weight: $font-weight-normal;
 }
 
-/*-------------------------------*/
-/*     WP FIELDS     */
-/*-------------------------------*/
 .the-title {
     text-transform: uppercase;
+    font-family: $font-stack-1;
+    font-size: $font-size-display3;
+    color: $black;
+    font-weight: $font-weight-normal;
+    line-height: normal;
 }
 
 .the-content {
+    font-size: $font-size-h3;
+}
+
+.about-author-heading, 
+.book-title,
+.contact-heading,
+.blog-heading{
+    font-size: $font-size-display4;
+}
+.form-control {
+    border: 1px solid #979797;
+    height: 64px;
+    background-color: $white;
+    font-family: $font-stack-1;
+    font-size: $font-size-h3;
+    line-height: 36px;
+    letter-spacing: -1.25px;
+    width: 100%;
+}
+
+.contact-button, .contact-butto:hover,
+.contact-butto:active,
+.contact-butto:visited,
+.contact-butto:focus {
+    background-color: $red;
+    border-color: $red;
+    border-radius: 0px;
+    color: $white;
+    font-family: $font-stack-1;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-h3;
+    height: 64px;
+    line-height: 34px;
+    white-space: pre-wrap;
 
 }
 
+.book-reviews-heading, 
+.book-awards-heading,
+.book-purchase-heading,
+.book-subscription-heading,
+.book-purchase-link-heading,
+.book-video-heading
+{
+    font-size: $font-size-h3;
+}
 
-/*-------------------------------*/
-/*     ABOUT     */
-/*-------------------------------*/
-.about-author-heading {
+.about-author-description,
+.book-description,
+.book-awards-description,
+.book-video-description,
+{
+    font-size: $font-size-h3;
+}
+
+.about-author-image,
+.book-cover-image,
+.book-purchase-link-image,
+.book-reviews-image,
+.book-awards-image,
+.book-subscription-image
+{
 
 }
 
-.about-author-description {
-
-}
-
-.about-author-image {
-
-}
-.about-author-heading {
-
-}
-.about-author-description {
-
-}
 .about-author-link, .about-author-link:hover {
-
+    color: $black;
 }
 
-/*-------------------------------*/
-/*     ALL BOOKS     */
-/*-------------------------------*/
 .all-books-display, .all-books-display:hover,
 .all-books-display:active,
 .all-books-display:visited,
 .all-books-display:focus {
-
+    background-color: $red;
+    border-color: $red;
+    border-radius: 0px;
+    color: $white;
+    font-family: $font-stack-1;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-h3;
+    height: 64px;
+    line-height: 50px;
+    white-space: pre-wrap;
 }
-.all-books-text {
 
+.all-books-text, 
+.book-button-text {
+    color: $white;
 }
 .all-books-link, all-books-link:hover {
-
+    color: $black;
 } 
 
-/*-------------------------------*/
-/*     BOOK AWARDS <dl>, <dt>, <dd>    */
-/*-------------------------------*/
-.book-awards-heading {
-
-}
-
-.book-awards-image {
-
-}
-.book-awards-name {
-
-}
-
-.book-awards-description {
-
-}
-
-/*-------------------------------*/
-/*     BOOK DETAILS   */
-/*-------------------------------*/
-.book-cover {
-
-    .book-cover-image {
-
-    } 
-    .book-cover-caption {
-
-    } 
-}
-
-.book-title {
-
-}
+.book-cover-caption {
+    text-transform: uppercase;
+    font-size: $font-size-h5;
+} 
 
 .book-subtitle {
-
-}
-.book-series {
-}
-.book-number {
-
-}
-.book-description {
-
-}
-.book-button-text {
+    font-size: $font-size-h5;
+    color: $gray-700;
 }
 
-/*-------------------------------*/
-/*     BOOK PURCHASE    */
-/*-------------------------------*/
+.book-series, .book-number {
+    font-size: $font-size-h6;
+    color: $gray-600;
+}
+
 .book-purchase-display, .book-purchase-display:hover,
 .book-purchase-display:active,
 .book-purchase-display:visited,
 .book-purchase-display:focus {
-
+    background-color: $red;
+    border-color: $red;
+    border-radius: 0px;
+    color: $white;
+    font-family: $font-stack-1;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-h3;
+    height: 64px;
+    line-height: 50px;
+    white-space: pre-wrap;
 }
 
-.book-purchase-heading {
-
-}
 
 .book-purchase-availability { //Date Picker
 
 }
 .book-purchase-coming-soon {
-
-}
-.book-purchase-link-heading {
-
-}
-.book-purchase-link-image {
-
+    color: $pink
 }
 
 .book-purchase-links, .book-purchase-links:hover {
-
+    color: $black;
 }
 
-
-/*-------------------------------*/
-/*     BOOK REVIEWS     */
-/*-------------------------------*/
-.book-reviews-heading {
-
-}
-.book-reviews-image {
-
-}
 .book-reviews-quote {
-
-
+    font-size: $font-size-h5;
+    color: $gray-700;
 } 
 
-.book-reviews-source-name {
+.book-reviews-source-name, .book-awards-name {
     font-weight: $font-weight-bold;
-
 }
 
-/*-------------------------------*/
-/*     BOOK SUBSCRIPTION  */
-/*-------------------------------*/
-.book-subscription-heading {
-
-}
-
-.book-subscription-subheading {
-
+.book-subscription-subheading, .book-video-subheading {
+    color: $gray-700;
 }
 
 .book-subscription-display, .book-subscription-display:hover,
 .book-subscription-display:active,
 .book-subscription-display:visited,
 .book-subscription-display:focus {
+    background-color: $red;
+    border-color: $red;
+    border-radius: 0px;
+    color: $white;
+    font-family: $font-stack-1;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-h3;
+    height: 64px;
+    line-height: 50px;
+    white-space: pre-wrap;
 
 }
 
-.book-subscription-image {
-
-}
 .book-subscription-code {
-
+    color: $gray-700;
 }
 
-/*-------------------------------*/
-/*     BOOK VIDEO     */
-/*-------------------------------*/
 .book-video-display, .book-video-display:hover,
 .book-video-display:active,
 .book-video-display:visited,
 .book-video-display:focus {
-
+    background-color: $red;
+    border-color: $red;
+    border-radius: 0px;
+    color: $white;
+    font-family: $font-stack-1;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-h3;
+    height: 64px;
+    line-height: 50px;
+    white-space: pre-wrap;
 }
-.book-video-heading {
 
-}
-.book-video-subheading {
 
-}
-.book-video-description {
-
-}
 .book-video-embed {
 
 }
 
-/*-------------------------------*/
-/*     SOCIAL SHARE     */
-/*-------------------------------*/
 .social-share-display, social-share-display:hover,
 .social-share-display:active,
 .social-share-displayvisited,
 .social-share-display:focus {
+    background-color: $red;
+    border-color: $red;
+    border-radius: 0px;
+    color: $white;
+    font-family: $font-stack-1;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-h3;
+    height: 64px;
+    line-height: 50px;
+    white-space: pre-wrap;
 
 }
 
 .social_share_text {
-
+    font-size: $font-size-h6;
+    color: $gray-700;
 }
 
-
+.input-group-append .btn {z-index: 0;}
 
 /*-------------------------------*/
 /*     MENU HAMBURGER     */
@@ -238,8 +253,6 @@ html {
 /*-------------------------------*/
 /*     Wrappers  - SIDE MENU     */
 /*-------------------------------*/
-
-
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -300,7 +313,7 @@ html {
     text-transform: uppercase;
 }
 .nav.sidebar-nav li a:hover {
-    color: $clr-red;
+    color: $red;
     text-decoration: none;
 }
 
@@ -346,7 +359,7 @@ html {
     text-transform: uppercase;
     position: absolute;
     font-size: 13px;
-    color: $clr-red;
+    color: $red;
     left: 0;
     width: 100%;
     top: 100%; }
@@ -409,7 +422,7 @@ html {
 .hamburger.is-closed .hamb-top,
 .hamburger.is-closed .hamb-middle,
 .hamburger.is-closed .hamb-bottom {
-    background-color: $clr-red; }
+    background-color: $red; }
 
 .hamburger.is-closed .hamb-top {
     top: 5px;
@@ -434,7 +447,7 @@ html {
 .hamburger.is-open .hamb-top,
 .hamburger.is-open .hamb-middle,
 .hamburger.is-open .hamb-bottom {
-    background-color: $clr-red; }
+    background-color: $red; }
 
 .hamburger.is-open .hamb-top,
 .hamburger.is-open .hamb-bottom {
@@ -462,7 +475,8 @@ html {
     text-align: center;
     opacity: 0;
     -webkit-transform: translate3d(0, 0, 0);
-    -webkit-transition: all .35s ease-in-out; }
+    -webkit-transition: all .35s ease-in-out;
+}
 
 .hamburger.is-open:hover:before {
     opacity: 1;
