@@ -60,12 +60,27 @@ body {
 
 }
 
+.comment-name {
+    font-weight: $font-weight-bold;
+    color: $red;
+}
+
+.blog-post-title {
+    font-weight: $font-weight-semibold;
+    color: $red;
+}
+
+.blog-post-date {
+    font-weight: $font-weight-normal;
+}
+
 .book-reviews-heading, 
 .book-awards-heading,
 .book-purchase-heading,
 .book-subscription-heading,
 .book-purchase-link-heading,
-.book-video-heading
+.book-video-heading,
+.comment-heading
 {
     font-size: $font-size-h3;
 }
@@ -280,7 +295,8 @@ html {
     width: 220px; }
 
 #page-content-wrapper {
-    width: 100%; }
+    width: 100%; 
+}
 @media (min-width: 769px) {
     #page-content-wrapper {
         /* 		padding-top: 70px; */ } }

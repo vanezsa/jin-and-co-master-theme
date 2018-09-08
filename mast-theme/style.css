@@ -55,12 +55,24 @@ body {
   line-height: 34px;
   white-space: pre-wrap; }
 
+.comment-name {
+  font-weight: 700;
+  color: #dc3545; }
+
+.blog-post-title {
+  font-weight: 600;
+  color: #dc3545; }
+
+.blog-post-date {
+  font-weight: 400; }
+
 .book-reviews-heading,
 .book-awards-heading,
 .book-purchase-heading,
 .book-subscription-heading,
 .book-purchase-link-heading,
-.book-video-heading {
+.book-video-heading,
+.comment-heading {
   font-size: 28px; }
 
 .about-author-description,

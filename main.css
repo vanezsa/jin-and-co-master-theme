@@ -89,10 +89,10 @@ a, a:hover {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 600;
   font-size: 48px;
-  color: #4A4A4A; }
+  color: #4A4A4A;
+  text-transform: uppercase; }
 
 .comment-name {
-  font-weight: 700;
   color: #DB2323; }
 
 .book-reviews-source-name {
@@ -256,14 +256,11 @@ footer {
   font-family: "Karla", sans-serif; }
 
 /* -- HAMBURGER -- */
-.c-fix {
-  background-color: transparent;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  height: 250px; }
+.hamburger {
+  z-index: 9999; }
 
 #wrapper.toggled #sidebar-wrapper, .sidebar-nav {
-  width: 370px; }
+  width: 280px; }
 
 #sidebar-wrapper {
   background: #FBF7EA !important; }
@@ -280,7 +277,10 @@ footer {
     text-align: center !important; }
 
   .pagination a {
-    font-size: 28px; } }
+    font-size: 28px; }
+
+  #wrapper.toggled #sidebar-wrapper, .sidebar-nav {
+    width: 220px; } }
 @media (max-width: 575px) {
   .the-title {
     font-size: 95px;

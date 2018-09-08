@@ -114,7 +114,7 @@ a, a:hover {
     letter-spacing: -1.25px;
 }
 
-.comment-heading,  {
+.comment-heading  {
     font-family: $font-stack-2;
     font-weight: $font-weight-semibold;
     font-size: 48px;
@@ -126,9 +126,9 @@ a, a:hover {
     font-weight: $font-weight-semibold;
     font-size: 48px;
     color: $black;
+    text-transform: uppercase;
 }
 .comment-name {
-    font-weight: $font-weight-bold;
     color: $red;
 }
 
@@ -314,15 +314,13 @@ footer {
 }
 
 /* -- HAMBURGER -- */
-.c-fix {
-    background-color: transparent;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 250px;
+
+.hamburger {
+    z-index: 9999;
 }
 
 #wrapper.toggled #sidebar-wrapper, .sidebar-nav {
-    width: 370px;
+    width: 280px;
 }
 #sidebar-wrapper {
     background: #FBF7EA!important;
@@ -337,8 +335,11 @@ footer {
 
 @media (max-width: 767px) {
     .txt-ctr {text-align: center!important;}
-    .pagination a {;
+    .pagination a {
         font-size: 28px; 
+    }
+    #wrapper.toggled #sidebar-wrapper, .sidebar-nav {
+        width: 220px;
     }
 }
 @media (max-width: 575px) {
@@ -348,11 +349,8 @@ footer {
     }
     .pl-5 {padding-left: 0.5rem!important;}
     .ml-5 {margin-left: 0.5rem!important;}
-    .pr-5 {padding-right: 1rem!important;}
+    .pr-5 {padding-right: 1rem!important;
+    }
 }
-
-
-
-
 
 
